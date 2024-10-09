@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
 const FileUpload = () => {
   const [file, setFile] = useState(null);
   const [patternDescription, setPatternDescription] = useState("");
@@ -26,7 +27,7 @@ const FileUpload = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/upload/",
+        `http://${process.env.BACKEND_SERVER}/api/upload/`,
         formData,
         {
           headers: {
