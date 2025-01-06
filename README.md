@@ -1,6 +1,9 @@
 ## **README.md**
 
 
+
+
+
 A full-stack web application with a Django backend (using SQLite) and a React frontend styled with Tailwind CSS. The backend processes uploaded CSV files using Pandas to infer data types, and the frontend allows users to upload these files and view results.
 
 
